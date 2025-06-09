@@ -36,17 +36,15 @@ class LoginSerializer(serializers.Serializer):
         if not check_password(data['password'], user.password):
             raise serializers.ValidationError("Contraseña incorrecta")
 
-        # Verificar que el usuario esté activo
         if not user.is_active:
             raise serializers.ValidationError("Usuario inactivo")
 
         refresh = RefreshToken.for_user(user)
         
-        # Añadir información del usuario para debugging
         return {
             'refresh': str(refresh),
             'access': str(refresh.access_token),
-            'user_id': user.id,  # Para verificar que se obtiene correctamente
+            'user_id': user.id,
             'user_email': user.email
         }
 

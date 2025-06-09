@@ -26,14 +26,11 @@ class LoginView(APIView):
 
 class BookView(APIView):
     def get(self, request):
-        """GET /books - Devuelve todos los libros con información del usuario que los registró"""
         books = Book.objects.all()
         serializer = BookWithUserSerializer(books, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
     
     def post(self, request):
-        """POST /books - Crea un nuevo libro (requiere autenticación)"""
-        # Verificar autenticación
         if not request.user.is_authenticated:
             return Response({"error": "Token de autenticación requerido"}, status=status.HTTP_401_UNAUTHORIZED)
             
@@ -52,7 +49,6 @@ class BookDeleteView(APIView):
     permission_classes = [IsAuthenticated]
     
     def delete(self, request, id):
-        """DELETE /books/:id - Elimina un libro por ID"""
         try:
             book = Book.objects.get(id=id)
             book.delete()
