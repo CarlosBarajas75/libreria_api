@@ -293,8 +293,8 @@ python manage.py migrate
 
 ## 👨‍💻 **DESARROLLADO POR**
 
-**Nombre**: [Tu Nombre]  
-**Email**: [Tu Email]  
+**Nombre**:  Carlos Barajas Sánchez
+**Email**: carlosbarajas75@hotmail.com
 **Fecha**: 9 de junio de 2025  
 **Assessment**: Backend Trainee - Digital Ignition  
 
@@ -303,16 +303,6 @@ python manage.py migrate
 ## 📄 **LICENCIA**
 
 Este proyecto fue desarrollado como parte de un assessment técnico para Digital Ignition.
-
----
-
-## 📞 **CONTACTO**
-
-Para cualquier duda o consulta sobre el proyecto:
-
-- **jose.esparza@digitalignition.com.mx**
-- **angel.arreola@digitalignition.com.mx**  
-- **roberto@digitalignition.com.mx**
 
 ---
 
