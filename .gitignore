@@ -1,0 +1,80 @@
+# ======================
+# ASSESSMENT TÉCNICO - BACKEND TRAINEE
+# Librería API con Django y MongoDB
+# ======================
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+media/
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Archivos de prueba y desarrollo (no necesarios para producción)
+test_api.py
+check_users.py
+clean_db.py
+
+# Documentos del assessment (no necesarios en el repo)
+MX01-40_Examen_Python.pdf
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
+*.old
+
+# Variables de entorno
+.env
+.env.*
+
+# Configuraciones locales
+local_settings.py
+
