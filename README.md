@@ -1,35 +1,25 @@
-# 📚 ASSESSMENT TÉCNICO - BACKEND TRAINEE
+# API REST - Gestión de Librería Digital
 
-## API REST para Gestión de Librería Digital
+Sistema de gestión para una librería digital desarrollado con Django y MongoDB. Permite registrar usuarios, autenticarlos mediante JWT y gestionar un catálogo de libros.
 
-Una API REST desarrollada con Django y MongoDB para gestionar usuarios y libros en una librería digital.
+## Funcionalidades Implementadas
 
----
+**Endpoints de autenticación:**
+- `POST /auth/register` - Registro de nuevos usuarios
+- `POST /auth/login` - Autenticación con JWT
 
-## 🎯 **OBJETIVOS CUMPLIDOS**
+**Gestión de libros:**
+- `GET /books` - Listar todos los libros con información del usuario que los registró
+- `POST /books` - Agregar nuevos libros (requiere autenticación)
+- `DELETE /books/:id` - Eliminar libros (requiere autenticación)
 
-✅ **Servicios REST implementados:**
-- POST `/auth/register` - Registro de usuarios
-- POST `/auth/login` - Inicio de sesión con JWT
-- GET `/books` - Consulta de libros con información del usuario registrador
-- POST `/books` - Creación de libros (requiere autenticación)
-- DELETE `/books/:id` - Eliminación de libros (requiere autenticación)
-
-✅ **Características de seguridad:**
-- Contraseñas encriptadas con PBKDF2
-- Autenticación JWT con tokens de 24 horas
+**Características de seguridad:**
+- Encriptación de contraseñas con PBKDF2
+- Tokens JWT con expiración de 24 horas
 - Validación de ISBN único
-- Protección de endpoints sensibles
+- Protección de rutas sensibles
 
-✅ **Extras implementados (puntos adicionales):**
-- Framework Django avanzado
-- Base de datos MongoDB (No Relacional)
-- Librerías de optimización (djangorestframework-simplejwt)
-- Código limpio y bien estructurado
-
----
-
-## 🛠️ **TECNOLOGÍAS UTILIZADAS**
+## Tecnologías Utilizadas
 
 - **Python 3.10+**
 - **Django 3.2** - Framework web
